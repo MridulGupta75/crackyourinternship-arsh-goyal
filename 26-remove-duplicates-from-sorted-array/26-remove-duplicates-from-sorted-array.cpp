@@ -7,14 +7,11 @@ public:
         k=nums.size();
         if(k==1)
             return k;
-        for(i=0,j=1;j<k;)
+        for(i=0,j=1;j<k;j++)
         {
-            if(nums[i]==nums[j])
-                j++;
-            else
+            if(nums[i]!=nums[j])
             {
                 nums[i+1]=nums[j];
-                j++;
                 i++;
             }
         }
