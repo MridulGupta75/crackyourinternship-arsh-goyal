@@ -26,7 +26,7 @@ public:
              {
                   ListNode*temp=r;
                    l->next=NULL;
-                  // delete temp;
+                  delete temp;
                    break;
              }
             else
