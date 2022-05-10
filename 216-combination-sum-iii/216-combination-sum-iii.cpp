@@ -36,10 +36,11 @@ public:
         if(subsol.size()==k)
         {
             int sum=0;
-            // for(int p:subsol){
-            //     sum+=p;
-            //     cout<<p<<endl;}
             for(int p:subsol)sum+=p;
+           // {
+               // sum+=p;
+               // cout<<p<<endl;
+            //}
             if(sum==n)sol.push_back(subsol);
             return;
         }
